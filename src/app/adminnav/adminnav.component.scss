@@ -1,0 +1,13 @@
+ul{
+    background-color: grey;
+    color:white;
+    li{
+        display: inline-block;
+    }
+    a{
+        text-decoration: none;
+        &:hover{
+            color:white;
+        }
+    }
+}

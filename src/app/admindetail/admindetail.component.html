@@ -1,0 +1,20 @@
+<div>
+  <div style="margin:0em 1em 0em 1em;">
+    <form style="display:inline-flex;padding:1em;" #f="ngForm" (ngSubmit)="linkadd(f)">
+      <input type="text" ngModel name="url" #url="ngModel" placeholder="Enter the URL" required>
+      <select [ngModel]=1 name="page">
+        <option [ngValue]="1">Page 1</option>
+        <option [ngValue]="2">Page 2</option>
+      </select>
+      <button type="submit" [disabled]="!f.valid">{{editMode?"Update":"Add"}}</button>
+      <button type="button" *ngIf="editMode" (click)="linkdelete(f)">Delete</button>
+      <button type="button" *ngIf="editMode" (click)="linkclear(f)">Clear</button>
+    </form>
+    <h3 style="color:gray;text-decoration: underline;">Existing URLs (Click on them to Edit or Delete)</h3>
+    <ul>
+      <li class="text" *ngFor="let item of items" (click)="linkedit(f,item)">
+        {{item.url}} (Page {{item.page}})
+      </li>
+    </ul>
+  </div>
+</div>

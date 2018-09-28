@@ -1,3 +1,13 @@
-<p>
-  page works!
-</p>
+<div class="mainContainer">
+    <header><a [routerLink]="[ 'first']">logo</a></header>
+    <div class="banner">Img</div>
+    <section>
+      <div class="routes">
+        <router-outlet></router-outlet>
+      </div>
+      <aside class="links">
+        <app-nav></app-nav>
+      </aside>
+    </section>
+  </div>
+  

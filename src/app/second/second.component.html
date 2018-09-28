@@ -1,20 +1,11 @@
 <div class="homepage">
-  <h1>Categories</h1>
-  <ul>
-    <li>
-        <iframe  height="315" src="https://www.youtube.com/embed/q6EmIqyHox0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </li>
-    <li>
-        <iframe  height="315" src="https://www.youtube.com/embed/q6EmIqyHox0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </li>
-    <li>
-        <iframe  height="315" src="https://www.youtube.com/embed/q6EmIqyHox0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </li>
-    <li>
-        <iframe  height="315" src="https://www.youtube.com/embed/q6EmIqyHox0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </li>
-    <li>
-        <iframe  height="315" src="https://www.youtube.com/embed/q6EmIqyHox0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </li>
-  </ul>
-</div>
+        <h1>Categories</h1>
+        <ul>
+      <li *ngFor="let item of items">
+              <video width="400" controls>
+                      <source src={{item.url}} type="video/mp4">
+                    </video>
+      </li>
+        </ul>
+      </div>
+      

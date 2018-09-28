@@ -1,0 +1,13 @@
+.mainContainer {
+    max-width: 1400px;
+    section {
+      display: flex;
+      .routes {
+        width: 75%;
+      }
+      aside {
+        width: 25%;
+      }
+    }
+  }
+  
