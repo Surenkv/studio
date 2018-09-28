@@ -1,0 +1,11 @@
+.homepage {
+  ul {
+    display: flex;
+  }
+  li {
+    width: 30%;
+    iframe {
+      width: 100%;
+    }
+  }
+}

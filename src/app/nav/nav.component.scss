@@ -1,0 +1,14 @@
+li {
+  margin-bottom: 10px;
+}
+.sideLinks {
+  color: #fff;
+  background-color: #ccc;
+  position: relative;
+  width: 100%;
+  height: 60px;
+  display: block;
+  &:hover {
+    background-color: #333;
+  }
+}
